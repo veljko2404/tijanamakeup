@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="sr-rs">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="stylegalerija.css" />
+  <link rel="stylesheet" href="styleindex.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="icon" sizes="196x196" href="photos/logo.png">
+  <link rel="apple-touch-icon" href="photos/logo.png">
+  <meta name="description" content="Галерија шминкања Тијана мејк ап салона, у Нишу, насеље ПАНТЕЛЕЈ. Веома повољне цене, за више информација посетите страницу..." />
+  <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+  <meta name="keywords" content="Sminkanje, Sminkanje Nis Pantelej, Makeup, Make up, Kozmeticki salon, galerija tijanamakeup salona" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="indexjava.js"></script>
+  <title>Галерија- Салона шминкања Ниш</title>
+  <style>
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+  <div class="container-fluid">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <img class="navbar-brand" href="#myPage" src="photos/logo.png" style="width: 70px; height: auto; border-radius: 50%; transform: translateY(-10px); -webkit-transform: translateY(-10px); -mstransform: translateY(-10px);" />
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/index.php">Врати се почетну</a></li>
+          </ul>
+        </div>
+        </div>
+      </nav>
+  </div>
+
+    <div class="jumbotron text-center" style="padding: 50px 0 25px !important;">
+      <h1 style="font-size: 4em;" class="ha1">Моји радови</h1>
+    </div>
+
+    <div class="container">
+      <div class="column">
+        <div class="card" style="border-radius: 5px;">
+          <img src="photos/slikag1.png" id="myImg1" class="imgg" style="width:100%">
+        </div>
+      </div>
+      <div class="column">
+        <div class="card" style="border-radius: 5px;">
+          <img src="photos/slikag2.jpg" id="myImg2" class="imgg" style="width:100%">
+        </div>
+      </div>
+      <div class="column">
+        <div class="card" style="border-radius: 5px;">
+          <img src="photos/slikag3.jpg" id="myImg3" class="imgg" style="width:100%">
+        </div>
+      </div>
+      <div class="column">
+        <div class="card" style="border-radius: 5px;">
+          <img src="photos/slikag4.jpg" id="myImg4" class="imgg" style="width:100%">
+        </div>
+      </div>
+      <div class="column">
+        <div class="card" style="border-radius: 5px;">
+          <img src="photos/slikag5.jpg" id="myImg5" class="imgg" style="width:100%">
+        </div>
+      </div>
+      <div class="column">
+        <div class="card" style="border-radius: 5px;">
+          <img src="photos/slikag6.png" id="myImg6" class="imgg" style="width:100%">
+        </div>
+      </div>
+      <div class="column">
+        <div class="card" style="border-radius: 5px;">
+          <img src="photos/slikag7.png" id="myImg7" class="imgg" style="width:100%">
+        </div>
+      </div>
+      <div class="column">
+        <div class="card" style="border-radius: 5px;">
+          <img src="photos/slikag8.png" id="myImg8" class="imgg" style="width:100%">
+        </div>
+      </div>
+      <div class="column">
+        <div class="card" style="border-radius: 5px;">
+          <img src="photos/slikag9.jpg" id="myImg9" class="imgg" style="width:100%">
+        </div>
+      </div>
+      <div class="column">
+        <div class="card" style="border-radius: 5px;">
+          <img src="photos/slikag10.jpg" id="myImg10" class="imgg" style="width:100%">
+        </div>
+      </div>
+      <div class="column">
+        <div class="card" style="border-radius: 5px;">
+          <img src="photos/slikag11.jpg" id="myImg11" class="imgg" style="width:100%">
+        </div>
+      </div>
+      <div class="column">
+        <div class="card" style="border-radius: 5px;">
+          <img src="photos/slikag12.png" id="myImg12" class="imgg myImg12" style="width:100%">
+        </div>
+      </div>
+    </div>
+
+    <a href="#myPage" title="Иди горе" id="totop" class="totop2">
+      <span class="fa fa-angle-up" id="angleup"></span>
+    </a>
+
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+    </div>
+
+    <script>
+    	var modal = document.getElementById('myModal');
+
+      var img = document.getElementById('myImg1');
+    	var modalImg = document.getElementById("img01");
+    	img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+    	}
+
+    	var span = document.getElementsByClassName("close")[0];
+
+    	span.onclick = function() {
+    	modal.style.display = "none";
+    	}
+    </script>
+
+    <script>
+    	var modal = document.getElementById('myModal');
+
+      var img = document.getElementById('myImg2');
+    	var modalImg = document.getElementById("img01");
+    	img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+    	}
+
+    	var span = document.getElementsByClassName("close")[0];
+
+    	span.onclick = function() {
+    	modal.style.display = "none";
+    	}
+    </script>
+
+    <script>
+    	var modal = document.getElementById('myModal');
+
+      var img = document.getElementById('myImg3');
+    	var modalImg = document.getElementById("img01");
+    	img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+    	}
+
+    	var span = document.getElementsByClassName("close")[0];
+
+    	span.onclick = function() {
+    	modal.style.display = "none";
+    	}
+    </script>
+
+    <script>
+    	var modal = document.getElementById('myModal');
+
+      var img = document.getElementById('myImg4');
+    	var modalImg = document.getElementById("img01");
+    	img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+    	}
+
+    	var span = document.getElementsByClassName("close")[0];
+
+    	span.onclick = function() {
+    	modal.style.display = "none";
+    	}
+    </script>
+
+    <script>
+    	var modal = document.getElementById('myModal');
+
+      var img = document.getElementById('myImg5');
+    	var modalImg = document.getElementById("img01");
+    	img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+    	}
+
+    	var span = document.getElementsByClassName("close")[0];
+
+    	span.onclick = function() {
+    	modal.style.display = "none";
+    	}
+    </script>
+
+    <script>
+    	var modal = document.getElementById('myModal');
+
+      var img = document.getElementById('myImg6');
+    	var modalImg = document.getElementById("img01");
+    	img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+    	}
+
+    	var span = document.getElementsByClassName("close")[0];
+
+    	span.onclick = function() {
+    	modal.style.display = "none";
+    	}
+    </script>
+
+    <script>
+    	var modal = document.getElementById('myModal');
+
+      var img = document.getElementById('myImg7');
+    	var modalImg = document.getElementById("img01");
+    	img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+    	}
+
+    	var span = document.getElementsByClassName("close")[0];
+
+    	span.onclick = function() {
+    	modal.style.display = "none";
+    	}
+    </script>
+
+    <script>
+    	var modal = document.getElementById('myModal');
+
+      var img = document.getElementById('myImg8');
+    	var modalImg = document.getElementById("img01");
+    	img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+    	}
+
+    	var span = document.getElementsByClassName("close")[0];
+
+    	span.onclick = function() {
+    	modal.style.display = "none";
+    	}
+    </script>
+
+    <script>
+    	var modal = document.getElementById('myModal');
+
+      var img = document.getElementById('myImg9');
+    	var modalImg = document.getElementById("img01");
+    	img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+    	}
+
+    	var span = document.getElementsByClassName("close")[0];
+
+    	span.onclick = function() {
+    	modal.style.display = "none";
+    	}
+    </script>
+
+    <script>
+    	var modal = document.getElementById('myModal');
+
+      var img = document.getElementById('myImg10');
+    	var modalImg = document.getElementById("img01");
+    	img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+    	}
+
+    	var span = document.getElementsByClassName("close")[0];
+
+    	span.onclick = function() {
+    	modal.style.display = "none";
+    	}
+    </script>
+
+    <script>
+    	var modal = document.getElementById('myModal');
+
+      var img = document.getElementById('myImg11');
+    	var modalImg = document.getElementById("img01");
+    	img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+    	}
+
+    	var span = document.getElementsByClassName("close")[0];
+
+    	span.onclick = function() {
+    	modal.style.display = "none";
+    	}
+    </script>
+
+    <script>
+    	var modal = document.getElementById('myModal');
+
+      var img = document.getElementById('myImg12');
+    	var modalImg = document.getElementById("img01");
+    	img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+    	}
+
+    	var span = document.getElementsByClassName("close")[0];
+
+    	span.onclick = function() {
+    	modal.style.display = "none";
+    	}
+    </script>
+
+</html>
