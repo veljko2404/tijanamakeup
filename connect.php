@@ -2,7 +2,7 @@
 
 $host = '208.82.114.142';
 $name = 'tijanama_tijana';
-$pass = 'golf4tdi';
+$pass = '';
 $db = 'tijanama_termini';
 
 if($conn = mysqli_connect($host, $name, $pass)){
